@@ -1,0 +1,69 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\LogiCore\\LogiCore\\Website\\wwwroot\\CSS\\index_style.css",
+      "PackagePath": "staticwebassets\\CSS\\index_style.css"
+    },
+    {
+      "Id": "D:\\LogiCore\\LogiCore\\Website\\wwwroot\\IMG\\Logicore.png",
+      "PackagePath": "staticwebassets\\IMG\\Logicore.png"
+    },
+    {
+      "Id": "D:\\LogiCore\\LogiCore\\Website\\wwwroot\\IMG\\TEST\\1.png",
+      "PackagePath": "staticwebassets\\IMG\\TEST\\1.png"
+    },
+    {
+      "Id": "D:\\LogiCore\\LogiCore\\Website\\wwwroot\\IMG\\TEST\\2.png",
+      "PackagePath": "staticwebassets\\IMG\\TEST\\2.png"
+    },
+    {
+      "Id": "D:\\LogiCore\\LogiCore\\Website\\wwwroot\\IMG\\TEST\\3.png",
+      "PackagePath": "staticwebassets\\IMG\\TEST\\3.png"
+    },
+    {
+      "Id": "D:\\LogiCore\\LogiCore\\Website\\wwwroot\\JS\\index_slider.js",
+      "PackagePath": "staticwebassets\\JS\\index_slider.js"
+    },
+    {
+      "Id": "D:\\LogiCore\\LogiCore\\Website\\wwwroot\\Messages.txt",
+      "PackagePath": "staticwebassets\\Messages.txt"
+    },
+    {
+      "Id": "D:\\LogiCore\\LogiCore\\Website\\wwwroot\\VIDEO\\TEST\\Cute Mitama-sama Moment.mp4",
+      "PackagePath": "staticwebassets\\VIDEO\\TEST\\Cute Mitama-sama Moment.mp4"
+    },
+    {
+      "Id": "D:\\LogiCore\\LogiCore\\Website\\wwwroot\\VIDEO\\TEST\\Genshin Impact Nahida Boundless Bliss Character Demo Trailer.mp4",
+      "PackagePath": "staticwebassets\\VIDEO\\TEST\\Genshin Impact Nahida Boundless Bliss Character Demo Trailer.mp4"
+    },
+    {
+      "Id": "D:\\LogiCore\\LogiCore\\Website\\wwwroot\\VIDEO\\VideoHome1.mp4",
+      "PackagePath": "staticwebassets\\VIDEO\\VideoHome1.mp4"
+    },
+    {
+      "Id": "D:\\LogiCore\\LogiCore\\Website\\wwwroot\\index.html",
+      "PackagePath": "staticwebassets\\index.html"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.Progetto.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.Progetto.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.build.Progetto.props",
+      "PackagePath": "build\\Progetto.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.Progetto.props",
+      "PackagePath": "buildMultiTargeting\\Progetto.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildTransitive.Progetto.props",
+      "PackagePath": "buildTransitive\\Progetto.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
