@@ -5,10 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LOGICORE</title>
-    <link rel="stylesheet" href="CSS/index_style.css">
+    <link rel="stylesheet" href="CSS/index_linkBar.css">
+    <link rel="stylesheet" href="CSS/index_main.css">
+    <link rel="stylesheet" href="CSS/index_styleDetails.css">
+    <link rel="stylesheet" href="CSS/index_outsideDetails.css">
+    <link rel="stylesheet" href="CSS/index_footer.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 
@@ -16,14 +20,14 @@
 
     <!-- barra dei link-->
     <header class="LinkBar">
-        <a href=""><img src="IMG/Logicore.png"></a>
+        <a href="index.html"><img src="CSS/IMG/Logicore.png"></a>
         <nav>
             <ul>
-                <li><a href="" class="active">Home</a></li>
+                <li><a href="index.html" class="active">Home</a></li>
                 <li><a href="">About Us</a></li>
                 <li><a href="">Functions</a></li>
                 <li><a href="">Support</a></li>
-                <li><a href="">Login</a></li>
+                <li><a href="login.html">Login / Registration</a></li>
             </ul>
         </nav>
     </header>
@@ -37,42 +41,128 @@
         <video autoplay muted loop id="background-video">
             <source src="VIDEO/VideoHome1.mp4" type="video/mp4">
         </video>
-        <br>
-        <br>
         <div class="NewsText" id="Moving-Text">
             <p>News</p>
         </div>
+        <div class="test-background">
+            <img src="CSS/IMG/background.jpg" alt="img" class="img_sfondo">
+        </div>
         <!-- Slideshow container -->
-        <div class="slideshow-container">
+        <div class="slider">
+            <div class="slideshow-container">
+                <!-- Full-width images with number and caption text -->
+                <div class="mySlides fade">
+                    <div class="numbertext">1 / 3</div>
+                    <a href=""><img src="CSS/IMG/TEST/1.png" style="width:100%"></a>
+                    <div class="text" id="text_1">TextId_1</div>
+                </div>
 
-            <!-- Full-width images with number and caption text -->
-            <div class="mySlides fade">
-                <div class="numbertext">1 / 3</div>
-                <a href=""><img src="IMG/TEST/1.png" style="width:100%"></a>
-                <div class="text" id="text_1">TextId_1</div>
-            </div>
+                <div class="mySlides fade">
+                    <div class="numbertext">2 / 3</div>
+                    <a href=""><img src="CSS/IMG/TEST/2.png" style="width:100%"></a>
+                    <div class="text" id="text_2">TextId_2</div>
+                </div>
 
-            <div class="mySlides fade">
-                <div class="numbertext">2 / 3</div>
-                <a href=""><img src="IMG/TEST/2.png" style="width:100%"></a>
-                <div class="text" id="text_2">TextId_2</div>
-            </div>
-
-            <div class="mySlides fade">
-                <div class="numbertext">3 / 3</div>
-                <a href=""><img src="IMG/TEST/3.png" style="width:100%"></a>
-                <div class="text" id="text_3">TextId_3</div>
+                <div class="mySlides fade">
+                    <div class="numbertext">3 / 3</div>
+                    <a href=""><img src="CSS/IMG/TEST/3.png" style="width:100%"></a>
+                    <div class="text" id="text_3">TextId_3</div>
+                </div>
             </div>
         </div>
-        <br>
-
         <!-- The dots/circles -->
         <div style="text-align:center">
             <span class="dot" onclick="currentSlide(1)"></span>
             <span class="dot" onclick="currentSlide(2)"></span>
             <span class="dot" onclick="currentSlide(3)"></span>
         </div>
+        <!------------------------------------------------------------------------------->
+        <div class="WWD">
+            <p>What we do?</p>
+        </div>
+        <!-- Box per spiegare quello che facciamo -->
+        <div class="boxSx">
+            <img src="CSS/IMG/TEST/1.png">
+            <div class="boxtextSx">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. At unde voluptatibus ex, asperiores id dignissimos optio, ipsam dolorum neque aliquam aspernatur! Blanditiis veritatis voluptatum molestias alias. Est sequi optio saepe?</p>
+                <a href="#"><i class="fi fi-rr-arrow-right"></i></a>
+            </div>
+        </div>
+        <div class="boxDx">
+            <div class="boxtextDx">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. At unde voluptatibus ex, asperiores id dignissimos optio, ipsam dolorum neque aliquam aspernatur! Blanditiis veritatis voluptatum molestias alias. Est sequi optio saepe?</p>
+                <a href="#"><i class="fi fi-rr-arrow-left"></i></a>
+            </div>
+            <img src="CSS/IMG/TEST/2.png">
+        </div>
+
+        <img src="CSS/IMG/background2.png" alt="" class="img_inbasso">
+        <!---------------------------------------------------->
+        <!-- Contact us -->
+        <div class="contactUs">
+            <br>
+            <div class="contText">
+                <p>Contact Us</p>
+            </div>
+            <p>Fill the form : </p>
+            <br>
+           <form>
+                <label>E-mail :</label>
+                <br>
+                <input name="email" type="email" class="email" placeholder="E-mail" id="mail">
+                <br>
+                <br>
+                <label>Message :</label>
+                <br>
+                <textarea name="message" id="message" cols="30" rows = "5" placeholder="Write your message"></textarea>
+                <br>
+                <br>
+                <input type="button" value="Submit information" id="contButton">
+           </form> 
+        </div>
+        <!---------------------------------------------------->
     </main>
+    <!-------------------------------------------------------->
+    <!-- Footer Time -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Our Service</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Functions</h4>
+                    <ul>
+                        <li><a href="#">Soon Available</a></li>
+                        <li><a href="#">Soon Available</a></li>
+                        <li><a href="#">Soon Available</a></li>
+                        <li><a href="#">Soon Available</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Follow us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
     <!-------------------------------------------------------->
     <script src="JS/index_slider.js"></script>
 </body>
