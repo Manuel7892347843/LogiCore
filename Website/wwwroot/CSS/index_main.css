@@ -197,3 +197,114 @@ a{
 .email{
     border-radius: 0%;   
 }
+
+/* Media Queries */
+
+/* Per schermi piccoli (smartphone) */
+@media only screen and (max-width: 600px) {
+  .NewsText, .WWD {
+      font-size: 2rem; /* Riduci la dimensione del font */
+      margin-top: 50%;
+  }
+  .CompanyName p
+  {
+    margin-top: 50%;
+    font-size: 4rem;
+  }
+
+  .slideshow-container {
+      max-width: 90%; /* Aumenta la larghezza per schermi piccoli */
+  }
+
+  .boxSx, .boxDx {
+      margin-left: 5%; /* Riduci il margine */
+      margin-top: 5%; /* Riduci il margine superiore */
+  }
+
+  .img_inbasso {
+      width: 50%; /* Aumenta la dimensione dell'immagine */
+  }
+}
+
+/* Per schermi medi (tablet) */
+@media only screen and (min-width: 601px) and (max-width: 1024) {
+  .NewsText, .WWD {
+      font-size: 3rem; /* Dimensione del font intermedia */
+  }
+  .CompanyName p
+  {
+    margin-top: 70%;
+    font-size: 6rem;
+  }
+
+  .slideshow-container {
+      max-width: 80%; /* Aumenta la larghezza per tablet */
+  }
+
+}
+
+@media only screen and (min-width: 800px) and (max-width: 1280px) {
+  .NewsText, .WWD {
+      font-size: 3rem; /* Dimensione del font intermedia */
+  }
+  .CompanyName p
+  {
+    margin-top: 40%;
+    font-size: 6rem;
+  }
+
+  .slideshow-container {
+      max-width: 80%; /* Aumenta la larghezza per tablet */
+  }
+
+  .boxSx, .boxDx {
+      margin-left: 10%; /* Margine intermedio */
+  }
+}
+
+/* Per schermi grandi (desktop) */
+@media only screen and (min-width: 1025px) {
+  .NewsText, .WWD {
+      font-size: 4rem; /* Dimensione del font originale */
+  }
+
+  .slideshow-container {
+      max-width: 60%; /* Larghezza originale */
+  }
+}
+
+@media (max-width: 1200px) {
+  .WWD {
+      font-size: 3rem; /* Riduci la dimensione del font */
+      margin-top: 10%; /* Riduci il margine superiore */
+  }
+
+  .boxSx, .boxDx {
+      max-width: 80%; /* Aumenta la larghezza massima per schermi più piccoli */
+      margin-left: 10%; /* Riduci il margine a sinistra */
+  }
+
+  .img_sfondo {
+      max-width: 100%; /* Imposta la larghezza massima al 100% */
+      margin-left: 0; /* Rimuovi il margine a sinistra */
+      margin-top: 20%; /* Riduci il margine superiore */
+  }
+}
+
+@media (max-width: 768px) {
+  .WWD {
+      font-size: 2.5rem; /* Ulteriore riduzione della dimensione del font */
+      margin-top: 5%; /* Riduci ulteriormente il margine superiore */
+  }
+
+  .boxSx, .boxDx {
+      flex-direction: column; /* Cambia la direzione del flex per una disposizione verticale */
+      max-width: 90%; /* Aumenta la larghezza massima */
+      margin-left: 5%; /* Riduci il margine a sinistra */
+  }
+
+  .img_inbasso {
+      width: 50%; /* Aumenta la larghezza dell'immagine */
+      margin-top: -10%; /* Regola il margine negativo */
+  }
+}

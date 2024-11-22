@@ -72,3 +72,51 @@ header ul li a.active
 
 
 
+
+/* Media Queries */
+
+/* Per schermi piccoli (smartphone) */
+@media only screen and (max-width: 600px) {
+    .CompanyName p {
+        font-size: 2.5rem; /* Riduci la dimensione del font */
+        margin-top: 10%; /* Riduci il margine superiore */
+    }
+
+    header ul {
+        font-size: 0.7rem; /* Riduci la dimensione del font nel menu */
+    }
+
+    header ul li {
+        margin-left: 5px; /* Riduci il margine tra gli elementi */
+    }
+
+    header ul li a {
+        padding: 2px 5px; /* Riduci il padding */
+    }
+
+    header a img {
+        height: 80px; /* Riduci l'altezza dell'immagine */
+    }
+}
+
+/* Per schermi medi (tablet) */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    .CompanyName p {
+        font-size: 4rem; /* Dimensione del font intermedia */
+    }
+
+    header ul {
+        font-size: 1.1rem; /* Leggermente più grande per tablet */
+    }
+}
+
+/* Per schermi grandi (desktop) */
+@media only screen and (min-width: 1025px) {
+    .CompanyName p {
+        font-size: 5rem; /* Dimensione del font originale */
+    }
+
+    header ul {
+        font-size: 1.2rem; /* Dimensione del font originale */
+    }
+}

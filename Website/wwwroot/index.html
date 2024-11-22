@@ -14,6 +14,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 </head>
 
 <body class="poppins-regular">
@@ -29,8 +30,11 @@
                 <li><a href="">Support</a></li>
                 <li><a href="login.html">Login / Registration</a></li>
             </ul>
+
         </nav>
     </header>
+    
+    <div class="overlay" id="overlay" onclick="toggleMenu()"></div>
     <!-------------------------------------------------------->
     <!-- pagina scrollabile -->
     <div class="CompanyName">
@@ -104,21 +108,21 @@
             <div class="contText">
                 <p>Contact Us</p>
             </div>
-            <p>Fill the form : </p>
+            <p>Fill the form:</p>
             <br>
-           <form>
+            <form id="contactForm">
                 <label>E-mail :</label>
                 <br>
-                <input name="email" type="email" class="email" placeholder="E-mail" id="mail">
+                <input name="email" type="email" class="email" placeholder="Your Email" id="mail" required>
                 <br>
                 <br>
                 <label>Message :</label>
                 <br>
-                <textarea name="message" id="message" cols="30" rows = "5" placeholder="Write your message"></textarea>
+                <textarea name="message" id="message" cols="30" rows="5" placeholder="Write your message" required></textarea>
                 <br>
                 <br>
-                <input type="button" value="Submit information" id="contButton">
-           </form> 
+                <button type="button" id="contButton">Submit form</button>
+            </form>
         </div>
         <!---------------------------------------------------->
     </main>
@@ -165,6 +169,7 @@
     </footer>
     <!-------------------------------------------------------->
     <script src="JS/index_slider.js"></script>
+    <script src="JS/index_contact.js"></script>
 </body>
 
 </html>
