@@ -129,3 +129,62 @@ a{
   opacity: 0;
   animation: fadeOut 7s forwards;
 }
+/* Default styles for larger screens */
+.wrapper {
+  width: 420px;
+}
+
+/* Media Query for tablets and smaller devices */
+@media (max-width: 768px) {
+  .wrapper {
+      width: 90%; /* Allow wrapper to take up more space on smaller screens */
+      padding: 20px; /* Reduce padding */
+  }
+
+  .wrapper h1 {
+      font-size: 30px; /* Decrease font size */
+  }
+
+  .input-box input {
+      font-size: 14px; /* Decrease input font size */
+  }
+
+  .wrapper .btn {
+      height: 40px; /* Adjust button height */
+      font-size: 14px; /* Adjust button font size */
+  }
+
+  .register-link {
+      font-size: 12px; /* Smaller font size for links */
+  }
+}
+
+
+/* Media Query for mobile devices */
+@media (max-width: 480px) {
+  .wrapper {
+      width: 95%; /* Make wrapper even wider on mobile */
+      padding: 15px; /* Further reduce padding */
+  }
+
+  .wrapper h1 {
+      font-size: 24px; /* Further decrease font size */
+  }
+
+  .input-box {
+      margin: 20px 0; /* Reduce margin */
+  }
+
+  .input-box input {
+      padding: 15px; /* Adjust padding for inputs */
+  }
+
+  .wrapper .btn {
+      height: 35px; /* Adjust button height for mobile */
+      font-size: 12px; /* Adjust button font size */
+  }
+
+  .messageDiv {
+      font-size: 0.9rem; /* Adjust message font size */
+  }
+}
