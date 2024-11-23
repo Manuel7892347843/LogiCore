@@ -1,7 +1,0 @@
-D:\LogiCore\LogiCore\Website\obj\Debug\net7.0\Progetto.csproj.AssemblyReference.cache
-D:\LogiCore\LogiCore\Website\obj\Debug\net7.0\Progetto.GeneratedMSBuildEditorConfig.editorconfig
-D:\LogiCore\LogiCore\Website\obj\Debug\net7.0\Progetto.AssemblyInfoInputs.cache
-D:\LogiCore\LogiCore\Website\obj\Debug\net7.0\Progetto.AssemblyInfo.cs
-D:\LogiCore\LogiCore\Website\obj\Debug\net7.0\Progetto.csproj.CoreCompileInputs.cache
-D:\LogiCore\LogiCore\Website\obj\Debug\net7.0\Progetto.MvcApplicationPartsAssemblyInfo.cache
-D:\LogiCore\LogiCore\Website\obj\Debug\net7.0\Progetto.sourcelink.json
