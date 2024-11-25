@@ -9,12 +9,13 @@
 
 /* Footer */
 .footer {
-    background: linear-gradient(rgb(255, 255, 255), rgb(14, 14, 14));
+    background: linear-gradient(rgb(36, 36, 36), rgb(14, 14, 14));
     padding: 70px 0;
     position: relative;
     border-radius: 0%;
     list-style: none;
     margin-top: 10%;
+    border-radius: 40px 40px  0 0;
 }
 
 .footer-col {
