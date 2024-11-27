@@ -1,175 +1,50 @@
 <!DOCTYPE html>
-<html lang="it">
-
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Home - LOGICORE</title>
-    <link rel="stylesheet" href="CSS/index_linkBar.css">
-    <link rel="stylesheet" href="CSS/index_main.css">
-    <link rel="stylesheet" href="CSS/index_styleDetails.css">
-    <link rel="stylesheet" href="CSS/index_outsideDetails.css">
-    <link rel="stylesheet" href="CSS/index_footer.css">
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <link rel="stylesheet" href="CSS/hub.css">
+    <title>Hub - LOGICORE</title>
 </head>
+<body>
+    <body>
 
-<body class="poppins-regular">
-
-    <!-- barra dei link-->
-    <header class="LinkBar">
-        <a href="index.html"><img src="CSS/IMG/Logicore.png"></a>
-        <nav>
-            <ul>
-                <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="aboutus.html">About Us</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="">Support</a></li>
-                <li><a href="login.html">Login / Registration</a></li>
-            </ul>
-
-        </nav>
-    </header>
-    <!-------------------------------------------------------->
-    <!-- pagina scrollabile -->
-    <div class="CompanyName">
-        <p>LOGICORE</p>
-    </div>
-    <main>
-        <!--Test VideoBackGround :) -->
-        <video autoplay muted loop id="background-video">
-            <source src="VIDEO/VideoHome1.mp4" type="video/mp4">
-        </video>
-        <div class="NewsText" id="Moving-Text">
-            <p>News</p>
-        </div>
-        <div class="test-background">
-            <img src="CSS/IMG/background.jpg" alt="img" class="img_sfondo">
-        </div>
-        <!-- Slideshow container -->
-        <div class="slider">
-            <div class="slideshow-container">
-                <!-- Full-width images with number and caption text -->
-                <div class="mySlides fade">
-                    <div class="numbertext">1 / 3</div>
-                    <a href="services.html"><img src="CSS/IMG/TEST/1.png" style="width:100%"></a>
-                    <div class="text" id="text_1"><b>LOGICORE APP</b></div>
-                </div>
-
-                <div class="mySlides fade">
-                    <div class="numbertext">2 / 3</div>
-                    <a href=""><img src="CSS/IMG/TEST/2.png" style="width:100%"></a>
-                    <div class="text" id="text_2">TextId_2</div>
-                </div>
-
-                <div class="mySlides fade">
-                    <div class="numbertext">3 / 3</div>
-                    <a href=""><img src="CSS/IMG/TEST/3.png" style="width:100%"></a>
-                    <div class="text" id="text_3">TextId_3</div>
+        <header>
+            <h1>LOGICORE HUB</h1>
+            <p>Explore all the LogiCore departments status</p>
+            <a href="status_department.html" class="cta-button">Check  department status</a>
+        </header>
+        
+        <section id="explore" class="main-section">
+            <div class="card">
+                <img src="CSS/IMG/Logicore_Games.png" alt="Servizi">
+                <div class="card-content">
+                    <h3>LogiCore Games</h3>
+                    <p>Find our games made by us</p>
+                    <a href="logicore_games_index.html">Explore our Games</a>
                 </div>
             </div>
-        </div>
-        <!-- The dots/circles -->
-        <div style="text-align:center">
-            <span class="dot" onclick="currentSlide(1)"></span>
-            <span class="dot" onclick="currentSlide(2)"></span>
-            <span class="dot" onclick="currentSlide(3)"></span>
-        </div>
-        <!------------------------------------------------------------------------------->
-        <div class="WWD">
-            <p>What we do?</p>
-        </div>
-        <!-- Box per spiegare quello che facciamo -->
-        <div class="boxSx">
-            <img src="CSS/IMG/TEST/1.png">
-            <div class="boxtextSx">
-                <b><p>Name_box</p></b>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. At unde voluptatibus ex, asperiores id dignissimos optio, ipsam dolorum neque aliquam aspernatur! Blanditiis veritatis voluptatum molestias alias. Est sequi optio saepe?</p>
-                <a href="#"><i class="fi fi-rr-arrow-right"></i></a>
-            </div>
-        </div>
-        <div class="boxDx">
-            <div class="boxtextDx">
-                <b><p>Name_box</p></b>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. At unde voluptatibus ex, asperiores id dignissimos optio, ipsam dolorum neque aliquam aspernatur! Blanditiis veritatis voluptatum molestias alias. Est sequi optio saepe?</p>
-                <a href="#"><i class="fi fi-rr-arrow-left"></i></a>
-            </div>
-            <img src="CSS/IMG/TEST/2.png">
-        </div>
-
-        <img src="CSS/IMG/background2.png" alt="" class="img_inbasso">
-        <!---------------------------------------------------->
-        <!-- Contact us -->
-        <div class="contactUs">
-            <br>
-            <div class="contText">
-                <p>Contact Us</p>
-            </div>
-            <p>Fill the form:</p>
-            <br>
-            <form id="contactForm">
-                <label>E-mail :</label>
-                <br>
-                <input name="email" type="email" class="email" placeholder="Your Email" id="mail" required>
-                <br>
-                <br>
-                <label>Message :</label>
-                <br>
-                <textarea name="message" id="message" cols="30" rows="5" placeholder="Write your message" required></textarea>
-                <br>
-                <br>
-                <button type="button" id="contButton">Submit form</button>
-            </form>
-        </div>
-        <!---------------------------------------------------->
-    </main>
-    <!-------------------------------------------------------->
-    <!-- Footer Time -->
-    <footer class="footer">
-        <div class="container">
-            <div class="row">
-                <div class="footer-col">
-                    <h4>Company</h4>
-                    <ul>
-                        <li><a href="aboutus.html">About Us</a></li>
-                        <li><a href="services.html">Our Service</a></li>
-                        <li><a href="#">Privacy Policy</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h4>Support</h4>
-                    <ul>
-                        <li><a href="#">FAQ</a></li>
-                        <li><a href="#">Contact Us</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h4>Functions</h4>
-                    <ul>
-                        <li><a href="#">Soon Available</a></li>
-                        <li><a href="#">Soon Available</a></li>
-                        <li><a href="#">Soon Available</a></li>
-                        <li><a href="#">Soon Available</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h4>Follow us</h4>
-                    <div class="social-links">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-youtube"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                    </div>
+            <div class="card">
+                <img src="CSS/IMG/Logicore_No_Icon.png" alt="Blog">
+                <div class="card-content">
+                    <h3>LogiCore</h3>
+                    <p>Discover who we are and buy a website</p>
+                    <a href="logicore_main_index.html">Explore LogiCore</a>
                 </div>
             </div>
-        </div>
-    </footer>
-    <!-------------------------------------------------------->
-    <script src="JS/index_slider.js"></script>
-    <script src="JS/index_contact.js"></script>
+            <div class="card">
+                <img src="CSS/IMG/Logicore_Shop.png" alt="Contatti">
+                <div class="card-content">
+                    <h3>LogiCore Shop</h3>
+                    <p>LogiCore merchandais</p>
+                    <a href="logicore_shop_index.html">Explore our shop</a>
+                </div>
+            </div>
+        </section>
+        
+        <footer>
+            <p>&copy; 2024 LogiCore Company. <a href="policy.html">Privacy policy</a></p>
+        </footer> 
+    </body>
 </body>
-
 </html>
